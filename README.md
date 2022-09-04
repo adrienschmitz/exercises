@@ -6,7 +6,7 @@
 <p align="center">
   <img alt="GitHub release" src="images/pexels_pixabay.jpg">
 </p>
-<p>Image by  Pixabay on Pexels</p>
+<p align="center">Image by <a href="https://www.pexels.com/pt-br/@pixabay/" rel="nofollow">Pixabay</a> on <a href="https://www.pexels.com/" rel="nofollow">Pexels</a> </p>
 
 
 - [Project Title](#project-title)

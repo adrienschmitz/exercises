@@ -1,7 +1,13 @@
-# Titulo do Projeto
+# Title of Project
 [(Back to top)](#project-title)
 
 <h2>My Python and Data Science exercises</h2>
+
+<p align="center">
+  <img alt="GitHub release" src="images/pexels_pixabay.jpg">
+</p>
+<p>Image by  Pixabay on Pexels</p>
+
 
 - [Project Title](#project-title)
 - [Features](#table-of-contents)
@@ -22,7 +28,7 @@
   # Startirg
   [(Back to top)](#começando)
 
-  Donsload and install <a href="https://www.python.org/downloads/"> Python</a>
+  Download and install <a href="https://www.python.org/downloads/"> Python</a>
 
 - Clone this repository and unzip it
 - After downloading, cd into the directory
@@ -38,7 +44,7 @@
 [(Back to top)](#screenshots)
 
  <p align="center">
-  <img alt="GitHub release" src="#">
+  
 </p>
  
 # License

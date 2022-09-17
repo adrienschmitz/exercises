@@ -1,0 +1,14 @@
+alcohol - Alcool
+malic_acid - ácido encontrado naturalmente em frutas
+ash- cinzas
+alcalinity of ash - A alcalinidade das cinzas é definida como a soma dos cátions, além do íon amônio, combinados
+magnesium - . A concentração de Mg aumenta na maturação da uva e se concentra na película
+total_phenols - O conteúdo fenólico no vinho refere-se aos compostos fenólicos - fenol natural e polifenóis
+flavanoids -  lavonoides são os principais polifenóis presentes no vinho tinto em peso, e constituem cerca de 80 a 90% dos polifenóis totais. Os flavonóides são derivados principalmente da casca e/ou semente de uvas vermelhas.
+nonflavanoid_phenols - Os fenólicos não flavonóides incluem várias subclasses de importância para o vinho, em particular os hidroxicinamatos, estilbenos e ácidos benzóicos.
+Proanthocyanidins- As proantocianidinas desempenham um papel importante no vinho; com a capacidade de ligar proteínas salivares, esses taninos condensados ​​influenciam fortemente a adstringência percebida do vinho
+color_intensity - intensidade da cor 
+hue - Se você observar um vinho tinto sob condições de iluminação natural e sobre um fundo branco, terá uma impressão bastante precisa de sua tonalidade
+od280/od315_of_diluted_wines -  protein concentration
+proline - A prolina é tipicamente o aminoácido mais abundante presente no suco de uva e no vinho
+target - vinho tipo 1, tipo 2 e tipo 3

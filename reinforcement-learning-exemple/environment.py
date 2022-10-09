@@ -59,3 +59,12 @@ class Maze(object):
         if self.robot_position == (5, 5):
             return True
         return False
+    
+    def give_reward(self):
+        if self.robot_position == (5, 5):
+            return 0
+        else:
+            return -1
+        
+    def get_state_and_reward(self):
+        return self.robot_position, self.give_reward()

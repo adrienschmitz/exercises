@@ -14,57 +14,64 @@ class Maze(object):
         
         self.robot_position = (0, 0)
         self.steps = 0
-        
-        self.allowed_states = None
         self.construct_allowed_states()
-        
+       
+    def print_maze(self):
+        print('---------------------------------')
+        for row in self.maze:
+            for col in row:
+                if col == 0:
+                    print('', end="\t") 
+                elif col == 1:
+                    print('X', end="\t") 
+                elif col == 2:
+                    print('R', end="\t") 
+            print("\n")
+        print('---------------------------------')
+
     def is_allowed_move(self, state, action):
         y, x = state
         y += ACTIONS[action][0]
-        X += ACTIONS[action][1]
-        
-        if y < 0 or x < 0 or y >5 or x > 5:
+        x += ACTIONS[action][1]
+        if y < 0 or x < 0 or y > 5 or x > 5:
             return False
-        
-        if self.maze[x, y] == 0 or self.maze[x, y] == 2:
+
+        if self.maze[y, x] == 0 or self.maze[y, x] == 2:
             return True
         else:
             return False
-        
-    
+
     def construct_allowed_states(self):
         allowed_states = {}
         for y, row in enumerate(self.maze):
             for x, col in enumerate(row):
                 if self.maze[(y,x)] != 1:
-                    allowed_states[(y, x)] = []
+                    allowed_states[(y,x)] = []
                     for action in ACTIONS:
-                        if self.is_allowed_move((y, x), action):
-                            allowed_states[(y, x)].append(action)
-                            
+                        if self.is_allowed_move((y,x), action) & (action != 0):
+                            allowed_states[(y,x)].append(action)
         self.allowed_states = allowed_states
-        
-    
+
     def update_maze(self, action):
-        y, x = self.robot_position
-        self.maze[y, x] = 0
-        y += ACTIONS[action][0]
-        x += ACTIONS[action][1]
-        self.robot_position = (y, x)
-        self.maze[y, x] = 2
-        self.steps += 1
-        
-        
+        y, x = self.robot_position 
+        self.maze[y, x] = 0 
+        y += ACTIONS[action][0] 
+        x += ACTIONS[action][1] 
+        self.robot_position = (y, x) 
+        self.maze[y, x] = 2 
+        self.steps += 1 
+
     def is_game_over(self):
         if self.robot_position == (5, 5):
             return True
-        return False
-    
+        else:
+            return False
+
+    def get_state_and_reward(self):
+        return self.robot_position, self.give_reward()
+
     def give_reward(self):
         if self.robot_position == (5, 5):
             return 0
-        else:
+        else: 
             return -1
-        
-    def get_state_and_reward(self):
-        return self.robot_position, self.give_reward()
